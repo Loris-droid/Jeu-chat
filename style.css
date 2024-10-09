@@ -1,7 +1,6 @@
 body {
     background-color: #87CEEB; /* Bleu ciel */
-    font-family: "Courier New", Courier, monospace; /* Police de machine à écrire */
-    text-align: center;
+    font-family: 'IBM Plex Mono', monospace; /* Police de machine à écrire */
 }
 
 h1 {
