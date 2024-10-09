@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <title>Accueil</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Bienvenue sur la page d'accueil</h1>
+    <h2>Jeu : Devinez un nombre entre 1 et 10</h2>
+    <script>
+        function guessNumber() {
+            var userGuess = prompt("Entrez un nombre entre 1 et 10 :");
+            var randomNumber = Math.floor(Math.random() * 10) + 1;
+            if (userGuess == randomNumber) {
+                alert("Bravo ! Vous avez deviné correctement.");
+            } else {
+                alert("Désolé, le bon nombre était " + randomNumber);
+            }
+        }
+    </script>
+    <button onclick="guessNumber()">Jouer</button>
+    <br><br>
+    <button onclick="window.location.href='form.html'">Formulaire</button>
+    <button onclick="window.location.href='text.html'">Texte</button>
+    <button onclick="window.location.href='maps.html'">Google Maps</button>
+</body>
+</html>
