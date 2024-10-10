@@ -1,59 +1,113 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Blog Personnel</title>
-    <!-- Importation de la police "Roboto" depuis Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href=style.css>
+    <title>Questions sur le HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        section {
+            width: 80%;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #4CAF50;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
 </head>
+
 <body>
+
     <header>
-        <h1>Bienvenue sur Mon Blog Personnel</h1>
-        <nav>
-            <ul>
-                <li><a href="#articles">Articles</a></li>
-                <li><a href="#galerie">Galerie d'images</a></li>
-                <li><a href="#commentaires">Commentaires</a></li>
-            </ul>
-        </nav>
+        <h1>Questions sur le HTML</h1>
     </header>
 
-    <section id="articles">
-        <h2>Mes Articles</h2>
-        <article>
-            <h3>Article 1 : Découvrir le Monde</h3>
-            <p>Ceci est un exemple de texte pour un article de blog. Partage tes pensées, expériences de voyage, ou toute autre passion.</p>
-        </article>
-        <article>
-            <h3>Article 2 : La Cuisine Créative</h3>
-            <p>Un autre exemple d'article pour parler de tes recettes préférées ou de la gastronomie que tu aimes.</p>
-        </article>
+    <section>
+        <h2>1. Donner la signification de HTML ?</h2>
+        <p>HTML signifie <strong>HyperText Markup Language</strong>. C'est un langage de balisage utilisé pour structurer le contenu des pages web et pour les relier entre elles via des hyperliens.</p>
     </section>
 
-    <section id="galerie">
-        <h2>Galerie d'images</h2>
-        <div class="gallery">
-            <img src="image1.jpg" alt="Image 1">
-            <img src="image2.jpg" alt="Image 2">
-            <img src="image3.jpg" alt="Image 3">
-        </div>
+    <section>
+        <h2>2. Quel est l'histoire de ce langage ?</h2>
+        <p>HTML a été créé en 1991 par <strong>Tim Berners-Lee</strong>, un informaticien britannique qui travaillait au CERN. Il a conçu HTML pour faciliter la mise en forme et la liaison des documents scientifiques sur le Web, donnant naissance à ce que nous appelons aujourd'hui le <em>World Wide Web</em>.</p>
     </section>
 
-    <section id="commentaires">
-        <h2>Commentaires</h2>
-        <form>
-            <label for="nom">Nom :</label>
-            <input type="text" id="nom" name="nom">
-            <label for="commentaire">Commentaire :</label>
-            <textarea id="commentaire" name="commentaire"></textarea>
-            <button type="submit">Envoyer</button>
-        </form>
+    <section>
+        <h2>3. Est-ce un langage de programmation ou de description ?</h2>
+        <p>HTML est un <strong>langage de description</strong> (ou de balisage). Il ne permet pas d'exécuter des algorithmes comme un langage de programmation (ex : Python, JavaScript) mais plutôt de décrire la structure d'une page web, comme les titres, les paragraphes, les images, etc.</p>
+    </section>
+
+    <section>
+        <h2>4. À quoi sert-il ?</h2>
+        <p>HTML sert à structurer et organiser le contenu d'une page web. Grâce à ses balises, on peut définir des titres, des paragraphes, des listes, des images, des liens, des tableaux, et bien plus encore. Il est essentiel pour la création de n'importe quelle page web.</p>
+    </section>
+
+    <section>
+        <h2>5. Quels sont les marqueurs de ce langage ?</h2>
+        <p>Les marqueurs de HTML sont appelés <strong>balises</strong> et sont entourées par des chevrons (&lt;&gt;). Par exemple, <code>&lt;p&gt;</code> est la balise qui représente un paragraphe.</p>
+    </section>
+
+    <section>
+        <h2>6. Lister les principales balises, à quoi servent-elles ?</h2>
+        <ul>
+            <li><code>&lt;html&gt;</code> : Balise racine qui contient tout le contenu de la page.</li>
+            <li><code>&lt;head&gt;</code> : Contient les métadonnées de la page (titre, encodage, etc.).</li>
+            <li><code>&lt;body&gt;</code> : Contient le contenu visible de la page (textes, images, liens).</li>
+            <li><code>&lt;h1&gt; à &lt;h6&gt;</code> : Balises de titre, du plus grand (h1) au plus petit (h6).</li>
+            <li><code>&lt;p&gt;</code> : Représente un paragraphe de texte.</li>
+            <li><code>&lt;a&gt;</code> : Crée un lien hypertexte.</li>
+            <li><code>&lt;img&gt;</code> : Affiche une image.</li>
+            <li><code>&lt;div&gt;</code> : Définit une division ou une section dans le document.</li>
+            <li><code>&lt;ul&gt;</code> et <code>&lt;li&gt;</code> : Crée des listes non ordonnées (à puces).</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>7. Aujourd'hui, l'usage de quelle version de HTML est recommandée par le W3C ?</h2>
+        <p>La version de HTML recommandée par le <strong>W3C</strong> est actuellement <strong>HTML5</strong>. Elle apporte de nouvelles balises (comme <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, et <code>&lt;header&gt;</code>) ainsi que des améliorations pour intégrer des vidéos, des audios et des graphiques de manière plus simple et native.</p>
     </section>
 
     <footer>
-        <p>&copy; 2024 Mon Blog Personnel. Tous droits réservés.</p>
+        <p>&copy; 2024 - Site éducatif sur le HTML</p>
     </footer>
+
 </body>
+
 </html>
