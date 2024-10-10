@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Questions sur le HTML</title>
+    <title>Accueil - Cours Web</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -20,27 +20,24 @@
             padding: 20px 0;
         }
 
-        h1 {
-            font-size: 2.5em;
-            margin: 0;
+        nav {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
         }
 
-        section {
-            width: 80%;
-            margin: 30px auto;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
+        nav a {
+            margin: 0 15px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
         }
 
-        h2 {
-            color: #4CAF50;
-        }
-
-        p {
-            font-size: 1.1em;
-            line-height: 1.6;
+        nav a:hover {
+            background-color: #45a049;
         }
 
         footer {
@@ -56,56 +53,20 @@
 <body>
 
     <header>
-        <h1>Questions sur le HTML</h1>
+        <h1>Cours Web</h1>
+        <p>Bienvenue dans notre site éducatif</p>
     </header>
 
-    <section>
-        <h2>1. Donner la signification de HTML ?</h2>
-        <p>HTML signifie <strong>HyperText Markup Language</strong>. C'est un langage de balisage utilisé pour structurer le contenu des pages web et pour les relier entre elles via des hyperliens.</p>
-    </section>
-
-    <section>
-        <h2>2. Quel est l'histoire de ce langage ?</h2>
-        <p>HTML a été créé en 1991 par <strong>Tim Berners-Lee</strong>, un informaticien britannique qui travaillait au CERN. Il a conçu HTML pour faciliter la mise en forme et la liaison des documents scientifiques sur le Web, donnant naissance à ce que nous appelons aujourd'hui le <em>World Wide Web</em>.</p>
-    </section>
-
-    <section>
-        <h2>3. Est-ce un langage de programmation ou de description ?</h2>
-        <p>HTML est un <strong>langage de description</strong> (ou de balisage). Il ne permet pas d'exécuter des algorithmes comme un langage de programmation (ex : Python, JavaScript) mais plutôt de décrire la structure d'une page web, comme les titres, les paragraphes, les images, etc.</p>
-    </section>
-
-    <section>
-        <h2>4. À quoi sert-il ?</h2>
-        <p>HTML sert à structurer et organiser le contenu d'une page web. Grâce à ses balises, on peut définir des titres, des paragraphes, des listes, des images, des liens, des tableaux, et bien plus encore. Il est essentiel pour la création de n'importe quelle page web.</p>
-    </section>
-
-    <section>
-        <h2>5. Quels sont les marqueurs de ce langage ?</h2>
-        <p>Les marqueurs de HTML sont appelés <strong>balises</strong> et sont entourées par des chevrons (&lt;&gt;). Par exemple, <code>&lt;p&gt;</code> est la balise qui représente un paragraphe.</p>
-    </section>
-
-    <section>
-        <h2>6. Lister les principales balises, à quoi servent-elles ?</h2>
-        <ul>
-            <li><code>&lt;html&gt;</code> : Balise racine qui contient tout le contenu de la page.</li>
-            <li><code>&lt;head&gt;</code> : Contient les métadonnées de la page (titre, encodage, etc.).</li>
-            <li><code>&lt;body&gt;</code> : Contient le contenu visible de la page (textes, images, liens).</li>
-            <li><code>&lt;h1&gt; à &lt;h6&gt;</code> : Balises de titre, du plus grand (h1) au plus petit (h6).</li>
-            <li><code>&lt;p&gt;</code> : Représente un paragraphe de texte.</li>
-            <li><code>&lt;a&gt;</code> : Crée un lien hypertexte.</li>
-            <li><code>&lt;img&gt;</code> : Affiche une image.</li>
-            <li><code>&lt;div&gt;</code> : Définit une division ou une section dans le document.</li>
-            <li><code>&lt;ul&gt;</code> et <code>&lt;li&gt;</code> : Crée des listes non ordonnées (à puces).</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>7. Aujourd'hui, l'usage de quelle version de HTML est recommandée par le W3C ?</h2>
-        <p>La version de HTML recommandée par le <strong>W3C</strong> est actuellement <strong>HTML5</strong>. Elle apporte de nouvelles balises (comme <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, et <code>&lt;header&gt;</code>) ainsi que des améliorations pour intégrer des vidéos, des audios et des graphiques de manière plus simple et native.</p>
-    </section>
+    <nav>
+        <a href="page1.html">Le HTML</a>
+        <a href="page2.html">Le CSS</a>
+        <a href="page3.html">RGPD</a>
+        <a href="page4.html">Clients / Serveurs</a>
+        <a href="page5.html">Web Dynamique</a>
+    </nav>
 
     <footer>
-        <p>&copy; 2024 - Site éducatif sur le HTML</p>
+        <p>&copy; 2024 - Cours Web</p>
     </footer>
 
 </body>
