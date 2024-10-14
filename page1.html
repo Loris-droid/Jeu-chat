@@ -1,103 +1,33 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Le HTML</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
-        body {
-            font-family: 'Courier Prime', monospace;
-            background-color: #f0f8ff;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #1e90ff;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        section {
-            width: 80%;
-            margin: 30px auto;
-            padding: 20px;
-            background-color: #add8e6;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            transition: transform 0.3s ease;
-        }
-
-        section:hover {
-            transform: scale(1.05);
-        }
-
-        h2 {
-            color: #4682b4;
-        }
-
-        p {
-            font-size: 1.1em;
-            line-height: 1.6;
-            color: #4169e1;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #000080;
-            color: white;
-            margin-top: 40px;
-        }
-
-        nav a {
-            margin: 0 15px;
-            color: white;
-            text-decoration: none;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
     <header>
-        <h1>Le HTML</h1>
+        <h1>Cours sur le HTML</h1>
         <nav>
-            <a href="index.html">Accueil</a>
-            <a href="page2.html">Le CSS</a>
-            <a href="page3.html">RGPD</a>
-            <a href="page4.html">Clients / Serveurs</a>
-            <a href="page5.html">Web Dynamique</a>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="page2.html">Le CSS</a></li>
+                <li><a href="page3.html">RGPD</a></li>
+                <li><a href="page4.html">Clients / Serveurs</a></li>
+                <li><a href="page5.html">Web Dynamique</a></li>
+            </ul>
         </nav>
     </header>
-
     <section>
-        <h2>1. Donner la signification de HTML</h2>
-        <p>HTML signifie <strong>HyperText Markup Language</strong>.</p>
+        <h2>Le HTML</h2>
+        <p><strong>Signification :</strong> HTML signifie HyperText Markup Language.</p>
+        <p><strong>Histoire :</strong> Le HTML a été inventé par Tim Berners-Lee en 1991.</p>
+        <p><strong>Langage de description :</strong> HTML est un langage de description et non de programmation.</p>
+        <p><strong>Utilité :</strong> Il sert à structurer et afficher le contenu d'une page web.</p>
+        <p><strong>Marqueurs :</strong> Les éléments HTML sont des balises comme &lt;html&gt;, &lt;body&gt;, &lt;h1&gt;, &lt;p&gt;, etc.</p>
+        <p><strong>Balises principales :</strong> &lt;html&gt;, &lt;head&gt;, &lt;body&gt;, &lt;p&gt;, &lt;h1&gt;, &lt;a&gt;, &lt;div&gt;...</p>
+        <p><strong>Version recommandée :</strong> HTML5 est la version recommandée aujourd'hui par le W3C.</p>
     </section>
-
-    <section>
-        <h2>2. Quel est l'histoire de ce langage ?</h2>
-        <p>HTML a été inventé par Tim Berners-Lee en 1991 pour structurer et présenter du contenu sur le web.</p>
-    </section>
-
-    <section>
-        <h2>3. Est-ce un langage de programmation ou de description ?</h2>
-        <p>HTML est un langage de description, utilisé pour structurer le contenu d'une page web.</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 - Cours Web</p>
-    </footer>
-
 </body>
-
 </html>
-
